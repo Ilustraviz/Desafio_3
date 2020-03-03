@@ -1,0 +1,29 @@
+$url: "http://192.168.0.106/prismacode/website";
+.banner1{
+    .extracontainer{
+        background: url($url+'/img/picture/banner1_1.png');
+        .container{
+            padding-top: 500px;
+            h1{
+                font-family: $font2;
+                font-size: $font-size2;
+                color: $white1;
+                &:after{
+                    content: '';
+                    width: 4px;
+                    margin-top: 50px;
+                    height: 500px;
+                    background: $color1;
+                    display: block;
+                }
+            }
+            h2{
+                font-family: $font1;
+                font-size: $font-size3;
+                color: $white2;
+                text-align: right;
+            }
+        }
+    }
+
+}

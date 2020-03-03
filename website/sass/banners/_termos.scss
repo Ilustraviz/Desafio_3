@@ -1,0 +1,78 @@
+.termos{
+    margin-bottom: 100px;
+    button{
+        display: table;
+        margin: 0 auto;
+    }
+    .extracontainer{
+        background: $white1;
+        padding-bottom: 100px;
+        padding-top: 200px;
+        margin-bottom: 100px;
+        .container{
+            >div{
+                @include mx-clearfix();
+            }
+            h2{
+                font-family: $font1;
+                font-size: $font-size3;
+                margin-bottom: 100px;
+                
+            }
+            h3{
+                font-family: $font1;
+                font-size: $font-size2;
+                margin-bottom: 100px;
+                
+            }
+            p{
+                font-family: $font2;
+                font-size: $font-size1;
+            }
+            .orange{
+                color:$color1
+            }
+            .bold{
+                font-weight: bold;
+            }
+            ul{
+                li{
+                    font-family: $font2;
+                    font-size: $font-size1;
+                    margin-bottom: 10px;
+                    display: flex;
+                    &::before{
+                        content: '';
+                        display: block;
+                        width: 10px;
+                        min-width: 10px;
+                        height: 2px;
+                        background: $black;
+                        margin-right: 10px;
+                        margin-top: 8px;
+                    }
+                }
+            }
+            .section{
+                margin-bottom: 100px;
+                .grid-1{
+                    h3{
+                        margin-bottom: 0;
+                    }
+                    p,ul{
+                        margin-bottom: 25px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    .bold{
+                        padding-top: 25px;
+                        &:first-child{
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

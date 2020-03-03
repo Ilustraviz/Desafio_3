@@ -1,0 +1,61 @@
+.equipe{
+    margin-bottom: 100px;
+    .container{
+        h2{
+            font-family: $font1;
+            font-size: $font-size3;
+            color: $white1;
+            margin-bottom: 75px;
+        }
+        .img{
+            height: 725px;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            p{
+                font-family: $font1;
+                font-size: $font-size3;
+                color: $white1;
+                top: 100px;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .infos{
+            height: 725px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                font-family: $font2;
+                font-size: $font-size2;
+                color: $white2;
+                margin-top: 100px;
+                line-height: 1.8;
+            }
+            ul{
+                display: flex;
+                margin-bottom: 100px;
+                li{
+                    margin-right: 100px;
+                    width: 50px;
+                    cursor: pointer;
+                    *{
+                        fill: $white2;
+                        transition: 0.1s ease;
+                    }
+                    &:hover{
+                        *{
+                            fill: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

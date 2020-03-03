@@ -1,0 +1,50 @@
+@mixin responsive($size) {
+	@if $size == ultrahd {
+		@media screen and (min-width: $ultrahd-device) {
+			@content;
+		}
+	}
+	@else if $size == fullhd {
+		@media screen and (min-width: $fullhd-device) and (max-width: $ultrahd-device - 1) {
+			@content;
+		}
+	}
+	@else if $size == hd {
+		@media screen and (min-width: $hd-device) and (max-width: $fullhd-device - 1) {
+			@content;
+		}
+	}
+	@else if $size == small {
+		@media screen and (max-width: $hd-device - 1) {
+			@content;
+		}
+	}
+}
+
+@mixin mx-clearfix {
+    &::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    &::before{
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin mx-section {
+	padding-top: 80px;
+    padding-bottom: 80px;
+    @include responsive('small')
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@function pixelToEm($pixel)
+{
+    @return $pixel / 16 + em;
+}

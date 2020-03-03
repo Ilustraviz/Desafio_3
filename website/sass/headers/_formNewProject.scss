@@ -1,0 +1,175 @@
+.formNewProject{
+    background: $white1;
+    position: fixed;
+    top: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: 9999999999;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    max-height: 100vh;
+    min-height: 100vh;
+    .logoAndClose{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;;
+        >div{
+            flex: 1;
+        }
+    }
+    .logo{
+        svg{
+            *{
+                transition: 0.1s ease;
+                fill: $color1;
+            }
+            cursor: pointer;
+            
+        }
+    }
+    .buttonMenu{
+        text-align: right;
+        svg{
+            cursor: pointer;
+            *{
+                transition: 0.1s ease;
+            }
+            &:hover{
+                *{
+                    fill: $color1;
+                }
+            }
+        }
+    }
+    h3{
+        font-family: $font1;
+        font-size: $font-size2;
+        color: $black;
+    }
+    h4{
+        font-family: $font2;
+        font-size: $font-size1;
+        color: $black;
+        margin-bottom: 75px;
+    }
+    form{
+        position: relative;
+        label{
+            font-family: $font2;
+            font-size: $font-size2;
+            color: $color1;
+        }
+        input,textarea,select,.input{
+            border: none;
+            width: 100%;
+            background: none;
+            padding: 25px;
+            font-family: $font2;
+            font-size: $font-size1;
+            color: $black;
+            border-bottom: 4px solid $color1;
+            margin-bottom: 50px;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: $color2;
+            }
+        }
+        textarea{
+            margin-top: 25px;
+            border: 4px solid $color1;
+            height: 250px;
+            resize: none;
+        }
+        select,.input{
+            margin-top: 25px;
+            border: 4px solid $color1;
+        }
+
+        .input{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $color2;
+            margin-bottom: 10px;
+            svg{
+                *{
+                    color: $color1;
+                }
+            }
+        }
+        >p{
+            font-family: $font2;
+            font-size: 14px;
+            color: $color2;
+            margin-left: 25px;
+            margin-bottom: 100px;
+        }
+        >div{
+            margin-bottom: 25px;
+            text-align: right;
+            p{
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
+        }
+        
+    }
+    button{
+        color: $color1;
+        margin-right: 0;
+        display: table;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-bottom: 50px;
+        &:hover{
+            color: $white1;
+        }
+    }
+    .grid-1{
+        position: relative;
+        left: 0;
+    }
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color: $black, $alpha: 0.8);
+    z-index: 99999;
+}
+
+.newProject-enter-active,
+.newProject-leave-active{
+    transition: 0.5s ease-out;
+}
+
+
+.newProject-enter{
+    left: -25px !important;
+    opacity: 0;
+}
+.newProject-leave-to {
+  left: 25px !important;
+  opacity: 0;
+}
+
+.overlay-enter-active,
+.overlay-leave-active{
+    transition: 0.5s ease-out;
+}
+
+
+.overlay-enter{
+    opacity: 0;
+}
+.overlay-leave-to {
+  opacity: 0;
+}

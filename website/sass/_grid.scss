@@ -1,0 +1,43 @@
+$columns: 2;
+$gutter: 50;
+
+.container{
+    margin: 0 auto;
+    @include mx-clearfix();
+    width: 1050px;
+    max-width: calc(100% - 200px);
+}
+.extracontainer{
+    margin: 0 auto;
+    @include mx-clearfix();
+    max-width: 1250px;
+    .container{
+        
+    }
+}
+
+@for $i from 0 to $columns {
+    .grid-#{$i + 1}{
+        width: calc( #{100 / $columns * ($i + 1)}% - #{$gutter}px );
+        margin-left: #{$gutter/2}px;
+        margin-right: #{$gutter/2}px;
+        float: left;
+        
+        
+        @include responsive('small'){
+            .grid-#{$i + 1}{
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+    @include responsive(small){
+        .grid-#{$i + 1}{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+}

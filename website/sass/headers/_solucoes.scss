@@ -1,0 +1,142 @@
+.solucoes{
+    padding-bottom: 100px;
+    .extracontainer{
+        background: $white1;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        .container{
+            &:before{
+                content: '';
+                width: 4px;
+                margin-bottom: 50px;
+                height: 500px;
+                background: $color1;
+                display: block;
+            }
+            h3{
+                font-family: $font1;
+                font-size: $font-size2;
+            }
+            p{
+                font-family: $font2;
+                font-size: $font-size2;
+                margin-bottom: 100px;
+            }
+            .listSolucao{
+                ul{
+                    border-top: 4px solid $color1;
+                    li{
+                        font-family: $font2;
+                        font-size: $font-size2;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        border-bottom: 4px solid $color1;
+                        position: relative;
+                        cursor: pointer;
+                        a{
+                            color: $black;
+                            transition: 0.5s ease;
+                            position: relative;
+                        }
+                        &:before{
+                            content: '';
+                            width: 0%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background: $color1;
+                            transition: 0.5s ease;
+                        }
+                        &:hover{
+                            a{
+                                margin-left: 25px;
+                                color: $white1;
+                            }
+                            &:before{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .listAllProjects{
+                ul{
+                    @include mx-clearfix();
+                    li{
+                        
+                        font-family: $font2;
+                        font-size: $font-size2;
+                        
+                        border-bottom: 4px solid $color1;
+                        position: relative;
+                        cursor: pointer;
+                        a{
+                            padding-top: 25px;
+                            padding-bottom: 25px;
+                            color: $black;
+                            transition: 0.5s ease;
+                            position: relative;
+                            display: block;
+                        }
+                        &:before{
+                            content: '';
+                            width: 0%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background: $color1;
+                            transition: 0.5s ease;
+                        }
+                        &:hover{
+                            a{
+                                margin-left: 25px;
+                                color: $white1;
+                            }
+                            &:before{
+                                width: 100%;
+                            }
+                        }
+                        &:nth-child(1){
+                            border-top: 4px solid $color1;
+                        }
+                        &:nth-child(2){
+                            border-top: 4px solid $color1;
+                        }
+                    }
+                }
+            }
+            h2{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                font-family: $font1;
+                font-size: $font-size3;
+            }
+            .logos{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                li{
+                    margin-right: 50px;
+                    margin-left: 50px;
+                    *{
+                        fill: $color2;
+                        transition: 0.1s ease;
+                    }
+                    &:hover{
+                        *{
+                            fill: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button1{
+        margin: 0 auto;
+        display: table;
+        font-size: $font-size1;
+        color: $white2;
+    }
+}

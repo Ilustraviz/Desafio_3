@@ -1,0 +1,103 @@
+.newsletter{
+    .extracontainer{
+        background: $white1;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        .container{
+            >div{
+                @include mx-clearfix();
+            }
+            .titulos{
+                h3{
+                    &:before{
+                        content: '';
+                        width: 4px;
+                        margin-bottom: 50px;
+                        height: 500px;
+                        background: $color1;
+                        display: block;
+                    }
+                }
+                p{
+                    margin-top: 550px;
+
+                }
+            }
+            h3{
+                font-family: $font1;
+                font-size: $font-size2;
+                margin-bottom: 100px;
+                
+            }
+            p{
+                font-family: $font2;
+                font-size: $font-size2;
+            }
+        }
+        .input{
+            >div{
+                float: right;
+                display: flex;
+                border-bottom: 4px solid $color1;
+                border-top: 4px solid $color1;
+                align-items: center;
+                position: relative;
+                input{
+                    border: none;
+                    width: 100%;
+                    background: none;
+                    padding: 25px;
+                    font-family: $font2;
+                    font-size: $font-size1;
+                    color: $black;
+                    &:focus{
+                        outline: none;
+                    }
+                    &::placeholder{
+                        color: $color2;
+                    }
+                    
+                }
+                .img{
+                    padding-right: 25px;
+                    cursor: pointer;
+                    *{
+                        transition: 0.5s ease;
+                        stroke:$color1;
+                    }
+                    &:hover{
+                        *{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &:before{
+                    content: '';
+                    width: 0%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: $color1;
+                    transition: 0.5s ease;
+                }
+                span{
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                    font-family: $font2;
+                    font-size: $font-size1;
+                }
+            }
+        }
+        .active{
+            >div{
+                color: $white1;
+                &:before{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}

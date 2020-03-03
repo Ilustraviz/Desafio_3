@@ -1,0 +1,50 @@
+.processos{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        h2{
+            font-family: $font1;
+            font-size: $font-size3;
+            color: $white1;
+            margin-bottom: 100px;
+        }
+        > div{
+            margin-bottom: 100px;
+            .cabecalho{
+                display: flex;
+                align-items: center;
+                .number{
+                    font-family: $font2;
+                    font-size: $font-size4;
+                    color: $color2;
+                    position: relative;
+                    width: 200px;
+                    text-align: right;
+                    &:after{
+                        content: '';
+                        width: 200px;
+                        height: 4px;
+                        background: $color1;
+                        position: absolute;
+                        top: calc(50% - 2px);
+                        left: 0;
+                    }
+                }
+                .titulo{
+                    font-family: $font1;
+                    font-size: $font-size2;
+                    color: $white2;
+                    margin-left: 50px;
+                }
+            }
+            .resumo{
+                p{
+                    font-family: $font2;
+                    font-size: $font-size1;
+                    color: $white2;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+}

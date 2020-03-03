@@ -1,0 +1,33 @@
+{
+    "name": "gustavopix/jobscgi",
+    "description": "Jobs CGI Project",
+    "minimum-stability": "stable",
+    "license": "private",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Gustavo Carvalho",
+            "email": "contato@prismacode.com",
+            "homepage": "https://prismacode.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "phpmailer/phpmailer": "^5.2",
+        "rain/raintpl": "^3.0",
+        "aws/aws-sdk-php-resources":"^0.1.0"
+    }
+}

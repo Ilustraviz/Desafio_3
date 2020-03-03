@@ -1,0 +1,126 @@
+.servicosOferecidos{
+    padding-bottom: 100px;
+    .extracontainer{
+        background: $white1;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        .container{
+            >div{
+                @include mx-clearfix();
+            }
+            .titulos{
+                h3{
+                    &:before{
+                        content: '';
+                        width: 4px;
+                        margin-bottom: 50px;
+                        height: 500px;
+                        background: $color1;
+                        display: block;
+                    }
+                }
+                p{
+                    margin-top: 550px;
+
+                }
+            }
+            h3{
+                font-family: $font1;
+                font-size: $font-size2;
+                margin-bottom: 100px;
+                
+            }
+            p{
+                font-family: $font2;
+                font-size: $font-size2;
+            }
+            .listAllProjects{
+                ul{
+                    margin-bottom: 100px;
+                    @include mx-clearfix();
+                    li{
+                        
+                        font-family: $font2;
+                        font-size: $font-size2;
+                        border-bottom: 4px solid $color1;
+                        position: relative;
+                        cursor: pointer;
+                        display: block;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        color: $black;
+                        
+                        span{
+                            transition: 0.5s ease;
+                            position: relative;
+                        }
+                        
+                        &:before{
+                            content: '';
+                            width: 0%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background: $color1;
+                            transition: 0.5s ease;
+                        }
+                        
+                        &:hover{
+                            color: $white1;
+                            span{
+                                margin-left: 25px;
+                            }
+                            &:before{
+                                width: 100%;
+                            }
+                        }
+                        &:nth-child(1){
+                            border-top: 4px solid $color1;
+                        }
+                        &:nth-child(2){
+                            border-top: 4px solid $color1;
+                        }
+                    }
+                    .active{
+                        color: $white1;
+                        span{
+                            margin-left: 25px;
+                        }
+                        &:before{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .sectionService{
+                h2{
+                    font-family: $font1;
+                    font-size: $font-size3;
+                    margin-bottom: 100px;
+                }
+                >div{
+                    @include mx-clearfix();
+                    margin-bottom: 100px;
+                    h3{
+                        margin-bottom: 0;
+                        &:before{
+                            content: '';
+                            width: 200px;
+                            height: 4px;
+                            margin-right: 50px;
+                            display: inline-block;
+                            background: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button1{
+        margin: 0 auto;
+        display: table;
+        font-size: $font-size1;
+        color: $white2;
+    }
+}
