@@ -46,4 +46,6 @@ const SQL_DBNAME = "my_bd"; //banco de dados
 
 Este projeto utiliza como base o slim framework para gerenciar as rotas, porém, ao iniciar o projeto, há uma instrução de onde e como modificar os arquivos caso não haja experiencia com o framework.
 
+É necessário liberar o servidor apache para ler o arquivo **.htaccess**
+
 Após finalizado, enviar os arquivos por e-mail ou repositório do git
