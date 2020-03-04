@@ -14,7 +14,7 @@ class Page{
            
         
     ];
-    public function __construct($data = array(), $opts = array(), $tpl_dir = "/website/templates/"){
+    public function __construct($data = array(), $opts = array(), $tpl_dir = TPL_DIR_BASE . "/website/templates/"){
         $this->options = array_merge($this->defaults,$opts);
         
         $config = array(
