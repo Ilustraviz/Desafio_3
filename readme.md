@@ -19,6 +19,7 @@ O desafio consiste em:
 
 ## Instalação
 
+### xamp ou direto servidor
 - Baixe o repositório
 - Coloque os arquivos em **/var/www/html** ou em **htdocs** caso esteja utilizando o xamp no Windows
 - Em **/var/www** (ou htdocs), crie as pastas **configs**
@@ -39,8 +40,12 @@ const SQL_DBNAME = "my_bd"; //banco de dados
 
 ?>
 ```
-
 - Crie um banco de dados e chame de **my_bd**, caso deseje chamar de outro nome, lembre-se de setar o nome no arquivo **configs.php**
+
+### Vagrant
+- Baixe o repositório
+- Abra o terminal e digite **vagrant up teste_ilustraviz**
+- O ip de instalação é o **192.168.0.180**, caso queira outro ip, modificar no Vagrantfile e o arquivo **./vagrant-configs/configs.php**
 
 
 

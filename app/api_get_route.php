@@ -18,7 +18,6 @@ $app->get('/api/usuarios', function (Request $request, Response $response, array
     echo json_encode([]);
     
 });
-
 $app->get('/api/createtable', function (Request $request, Response $response, array $args) use ($app) {
 
     $sql = new Sql();
